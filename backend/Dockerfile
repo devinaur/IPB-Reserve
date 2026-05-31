@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libpq-dev \
     && rm -rf /var/lib/apt/lists/*
 
-COPY requirements.txt .
+COPY backend/requirements.txt .
 
 # Install dependencies into local directory
 RUN pip install --user --no-cache-dir -r requirements.txt
@@ -28,7 +28,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY --from=builder /root/.local /root/.local
 
 # Copy application code (excluding files in .dockerignore if any, and do not rely on .env)
-COPY . .
+COPY backend/ .
 
 # Ensure the local bin is in PATH
 ENV PATH=/root/.local/bin:$PATH

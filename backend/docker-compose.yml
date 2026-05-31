@@ -1,8 +1,8 @@
 services:
   backend:
     build:
-      context: .
-      dockerfile: Dockerfile
+      context: ..
+      dockerfile: backend/Dockerfile
     image: ipb-reserve-backend:latest
     container_name: ipb-reserve-backend
     ports:
