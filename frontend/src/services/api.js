@@ -44,7 +44,7 @@ export const facilityService = {
   },
 
   createFacility: async (data) => {
-    const response = await api.post('/facilities/', data);
+    const response = await api.post('/facilities', data);
     return response.data;
   },
 
@@ -66,7 +66,7 @@ export const reservationService = {
   },
 
   getAllReservations: async () => {
-    const response = await api.get('/reservations/');
+    const response = await api.get('/reservations');
     return response.data;
   },
 
@@ -76,12 +76,12 @@ export const reservationService = {
   },
 
   createReservation: async (data) => {
-    const response = await api.post('/reservations/', data);
+    const response = await api.post('/reservations', data);
     return response.data;
   },
   
   deleteReservation: async (id) => {
-    const response = await api.delete(`/reservations/${id}/`);
+    const response = await api.delete(`/reservations/${id}`);
     return response.data;
   },
 
@@ -98,7 +98,7 @@ export const reservationService = {
 
 export const notificationService = {
   getNotifications: async () => {
-    const response = await api.get('/notifications/');
+    const response = await api.get('/notifications');
     return response.data;
   },
   markRead: async (id) => {

@@ -29,7 +29,7 @@ class NotificationRouter:
         self._setup_routes()
 
     def _setup_routes(self):
-        self.router.add_api_route("/", self.list_my_notifications, methods=["GET"], response_model=List[NotificationOut])
+        self.router.add_api_route("", self.list_my_notifications, methods=["GET"], response_model=List[NotificationOut])
         self.router.add_api_route("/read-all", self.mark_all_read, methods=["PUT"], status_code=204)
         self.router.add_api_route("/{notification_id}/read", self.mark_read, methods=["PUT"], response_model=NotificationOut)
 

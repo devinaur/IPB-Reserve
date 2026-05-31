@@ -38,5 +38,5 @@ ENV PORT=8000
 
 EXPOSE $PORT
 
-# Run application using the configured port
-CMD uvicorn src.main:app --host 0.0.0.0 --port $PORT
+# Run application using the configured port, trusting proxy headers
+CMD uvicorn src.main:app --host 0.0.0.0 --port $PORT --proxy-headers --forwarded-allow-ips="*"

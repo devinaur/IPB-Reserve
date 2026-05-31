@@ -17,7 +17,7 @@ load_dotenv()
 
 class CampusReservationApp:
     def __init__(self):
-        self.app = FastAPI(title="Campus Facility Reservation API")
+        self.app = FastAPI(title="Campus Facility Reservation API", redirect_slashes=False)
         self._setup_middleware()
         self._setup_events()
         self._setup_routes()

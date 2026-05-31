@@ -17,7 +17,7 @@ class QueueRouter:
         self._setup_routes()
 
     def _setup_routes(self):
-        self.router.add_api_route("/", self.join_queue, methods=["POST"], response_model=QueueOut, status_code=201)
+        self.router.add_api_route("", self.join_queue, methods=["POST"], response_model=QueueOut, status_code=201)
         self.router.add_api_route("/{facility_id}", self.list_queue, methods=["GET"], response_model=List[QueueOut])
         self.router.add_api_route("/{facility_id}/pop", self.pop_next, methods=["POST"], response_model=QueueOut)
 

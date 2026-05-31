@@ -33,9 +33,9 @@ class ReservationRouter:
 
     def _setup_routes(self):
         self.router.add_api_route("/stats", self.get_reservation_stats, methods=["GET"])
-        self.router.add_api_route("/", self.create_reservation, methods=["POST"], response_model=ReservationOut, status_code=201)
+        self.router.add_api_route("", self.create_reservation, methods=["POST"], response_model=ReservationOut, status_code=201)
         self.router.add_api_route("/me", self.list_my_reservations, methods=["GET"], response_model=List[ReservationOut])
-        self.router.add_api_route("/", self.list_all_reservations, methods=["GET"], response_model=List[ReservationOut])
+        self.router.add_api_route("", self.list_all_reservations, methods=["GET"], response_model=List[ReservationOut])
         self.router.add_api_route("/{reservation_id}/status", self.update_reservation_status, methods=["PUT"], response_model=ReservationOut)
         self.router.add_api_route("/{reservation_id}/damage", self.report_damage, methods=["PUT"], response_model=ReservationOut)
         self.router.add_api_route("/{reservation_id}", self.delete_reservation, methods=["DELETE"], status_code=204)

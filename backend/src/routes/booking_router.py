@@ -17,7 +17,7 @@ class BookingRouter:
         self._setup_routes()
 
     def _setup_routes(self):
-        self.router.add_api_route("/", self.create_booking, methods=["POST"], response_model=BookingOut, status_code=201)
+        self.router.add_api_route("", self.create_booking, methods=["POST"], response_model=BookingOut, status_code=201)
         self.router.add_api_route("/facility/{facility_id}", self.list_facility_bookings, methods=["GET"], response_model=List[BookingOut])
         self.router.add_api_route("/user/{user_id}", self.list_user_bookings, methods=["GET"], response_model=List[BookingOut])
 

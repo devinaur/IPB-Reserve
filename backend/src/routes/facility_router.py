@@ -28,9 +28,9 @@ class FacilityRouter:
         self._setup_routes()
 
     def _setup_routes(self):
-        self.router.add_api_route("/", self.list_facilities, methods=["GET"], response_model=List[FacilityOut])
+        self.router.add_api_route("", self.list_facilities, methods=["GET"], response_model=List[FacilityOut])
         self.router.add_api_route("/{facility_id}", self.get_facility, methods=["GET"], response_model=FacilityOut)
-        self.router.add_api_route("/", self.create_facility, methods=["POST"], response_model=FacilityOut, status_code=201)
+        self.router.add_api_route("", self.create_facility, methods=["POST"], response_model=FacilityOut, status_code=201)
         self.router.add_api_route("/{facility_id}", self.update_facility, methods=["PUT"], response_model=FacilityOut)
         self.router.add_api_route("/{facility_id}", self.delete_facility, methods=["DELETE"], status_code=204)
 
