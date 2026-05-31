@@ -1,5 +1,5 @@
 from datetime import date, datetime
-from typing import List
+from typing import List, Optional
 
 from ..models.reservation import Reservation, ReservationStatus
 from ..models.user import User
