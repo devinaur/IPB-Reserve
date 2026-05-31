@@ -1,6 +1,6 @@
 from typing import List
 
-from ..domain.user import User, UserRole
+from ..models.user import User, UserRole
 from ..repositories.user_repo import UserRepository
 
 

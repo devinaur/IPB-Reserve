@@ -2,7 +2,7 @@ from sqlmodel import Session, select
 from typing import List, Optional
 from datetime import datetime
 from ..models.booking_orm import BookingORM
-from ..domain.booking import Booking
+from ..models.booking import Booking
 
 
 class BookingRepository:

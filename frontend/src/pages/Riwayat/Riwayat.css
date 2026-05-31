@@ -1,0 +1,83 @@
+.riwayat-page-wrapper {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.riwayat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+
+.riwayat-title {
+  color: #012A58;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.riwayat-subtitle {
+  color: #6B7280;
+  font-size: 14px;
+}
+
+.btn-ajukan-reservasi {
+  background-color: #012A58;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-ajukan-reservasi:hover {
+  background-color: #021a36;
+}
+
+.summary-card.riwayat-summary {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+  margin-bottom: 32px;
+  border: 1px solid #E5E7EB;
+}
+
+.summary-label {
+  color: #4B5563;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.summary-value {
+  color: #111827;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.section-label {
+  color: #012A58;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+
+.riwayat-list {
+  display: flex;
+  flex-direction: column;
+}
+

@@ -1,0 +1,58 @@
+.cancel-modal {
+  max-width: 600px;
+  padding: 32px;
+}
+
+.cancel-warning {
+  color: #4B5563;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  padding: 16px;
+  background-color: #FFF7ED;
+  border-left: 4px solid #F97316;
+  border-radius: 4px;
+}
+
+.cancel-modal .form-group label {
+  color: #111827;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.cancel-modal textarea {
+  width: 100%;
+  border: 1px solid #D1D5DB;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 14px;
+  outline: none;
+  resize: vertical;
+}
+
+.btn-back {
+  background-color: #FFFFFF;
+  border: 1px solid #D1D5DB;
+  color: #4B5563;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-confirm-cancel {
+  background-color: #DC2626;
+  border: none;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-confirm-cancel:hover {
+  background-color: #B91C1C;
+}

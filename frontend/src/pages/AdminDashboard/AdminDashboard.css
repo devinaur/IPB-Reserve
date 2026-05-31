@@ -1,0 +1,383 @@
+.admin-dashboard-wrapper {
+  padding: 32px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background-color: #F9FAFE;
+  min-height: calc(100vh - 64px);
+}
+
+.admin-dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-dashboard-title {
+  color: #012A58;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 6px;
+  letter-spacing: -0.5px;
+}
+
+.admin-dashboard-subtitle {
+  color: #6B7280;
+  font-size: 14px;
+}
+
+.admin-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.request-management-section {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  border: 1px solid rgba(229, 231, 235, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-header h2 {
+  font-size: 18px;
+  color: #012A58;
+  font-weight: 700;
+}
+
+.btn-refresh {
+  background-color: #EEF2FF;
+  border: none;
+  color: #4F46E5;
+  padding: 10px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.btn-refresh:hover {
+  background-color: #E0E7FF;
+  color: #4338CA;
+}
+
+.error-message {
+  color: #DC2626;
+  background-color: #FEE2E2;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.loading-message, .empty-message {
+  text-align: center;
+  padding: 40px 0;
+  color: #6B7280;
+  font-size: 14px;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.admin-table th {
+  padding: 14px 16px;
+  border-bottom: 2px solid #F3F4F6;
+  color: #4B5563;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.admin-table td {
+  padding: 16px;
+  border-bottom: 1px solid #F3F4F6;
+  font-size: 14px;
+  color: #1F2937;
+  vertical-align: middle;
+}
+
+.admin-table tbody tr {
+  transition: background-color 0.2s;
+}
+
+.admin-table tbody tr:hover {
+  background-color: #F9FAFE;
+}
+
+.col-req-id {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  color: #4F46E5;
+}
+
+.user-info-cell {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name-text {
+  font-weight: 600;
+  color: #111827;
+}
+
+.user-role-text {
+  font-size: 11px;
+  color: #6B7280;
+  margin-top: 2px;
+}
+
+.col-facility {
+  font-weight: 500;
+  color: #012A58;
+}
+
+.date-info-cell {
+  display: flex;
+  flex-direction: column;
+}
+
+.date-text {
+  font-weight: 500;
+}
+
+.time-text {
+  font-size: 11px;
+  color: #6B7280;
+  margin-top: 2px;
+}
+
+.col-purpose {
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #4B5563;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-badge.MENUNGGU {
+  background-color: #FFEDD5;
+  color: #C2410C;
+}
+
+.status-badge.DISETUJUI {
+  background-color: #DCFCE7;
+  color: #15803D;
+}
+
+.status-badge.DITOLAK {
+  background-color: #FEE2E2;
+  color: #B91C1C;
+}
+
+.col-actions {
+  min-width: 160px;
+}
+
+.action-buttons-group {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-approve, .btn-reject {
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+}
+
+.btn-approve {
+  background-color: #16A34A;
+  color: #FFFFFF;
+}
+
+.btn-approve:hover {
+  background-color: #15803D;
+  box-shadow: 0 2px 4px rgba(22, 163, 74, 0.2);
+}
+
+.btn-reject {
+  background-color: #FFFFFF;
+  border-color: #EF4444;
+  color: #EF4444;
+}
+
+.btn-reject:hover {
+  background-color: #FEE2E2;
+  box-shadow: 0 2px 4px rgba(239, 68, 68, 0.1);
+}
+
+.action-completed {
+  color: #9CA3AF;
+  font-size: 14px;
+}
+
+.btn-damage {
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: #FFFFFF;
+  border: 1px solid #E28743;
+  color: #E28743;
+}
+
+.btn-damage:hover {
+  background-color: #FDF6F0;
+  box-shadow: 0 2px 4px rgba(226, 135, 67, 0.15);
+}
+
+.damage-info-badge {
+  display: flex;
+  flex-direction: column;
+  background-color: #FEF2F2;
+  border: 1px solid #FEE2E2;
+  padding: 6px 10px;
+  border-radius: 6px;
+  max-width: 200px;
+}
+
+.damage-badge-title {
+  color: #DC2626;
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.damage-badge-desc {
+  color: #7F1D1D;
+  font-size: 12px;
+  margin-top: 2px;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+/* Analytics & Chart Styles for Admin Riwayat */
+.analytics-section {
+  margin-bottom: 32px;
+}
+
+.riwayat-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.chart-section {
+  margin-bottom: 32px;
+}
+
+.chart-container {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 24px;
+  border: 1px solid #E5E7EB;
+  height: 250px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.chart-bars {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  align-items: flex-end;
+  gap: 16px;
+  padding-top: 20px;
+}
+
+.bar-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+}
+
+.bar-wrapper {
+  flex: 1;
+  width: 40px;
+  background-color: #F3F4F6;
+  border-radius: 6px 6px 0 0;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+}
+
+.bar-fill {
+  width: 100%;
+  background: linear-gradient(to top, #012A58, #2563EB);
+  border-radius: 6px 6px 0 0;
+  transition: height 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  cursor: pointer;
+}
+
+.bar-tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #111827;
+  color: #FFFFFF;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+}
+
+.bar-fill:hover .bar-tooltip {
+  opacity: 1;
+}
+
+.bar-label {
+  margin-top: 12px;
+  font-size: 12px;
+  color: #6B7280;
+  font-weight: 600;
+}

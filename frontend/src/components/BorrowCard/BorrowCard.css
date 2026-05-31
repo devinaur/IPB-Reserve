@@ -1,0 +1,81 @@
+.borrow-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.borrow-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.borrow-card-title {
+  color: #012A58;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.borrow-card-purpose {
+  color: #4B5563;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.borrow-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #6B7280;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.borrow-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn-edit {
+  background-color: transparent;
+  color: #012A58;
+  border: 1px solid #012A58;
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-edit:hover {
+  background-color: #F3F4F6;
+}
+
+.btn-menu {
+  background: none;
+  border: none;
+  color: #6B7280;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.btn-menu:hover {
+  background-color: #F3F4F6;
+}

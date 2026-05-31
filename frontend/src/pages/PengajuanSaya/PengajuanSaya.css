@@ -1,0 +1,70 @@
+.pengajuan-page-wrapper {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pengajuan-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+
+.pengajuan-title {
+  color: #012A58;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.pengajuan-subtitle {
+  color: #6B7280;
+  font-size: 14px;
+}
+
+.btn-ajukan-reservasi {
+  background-color: #012A58;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-ajukan-reservasi:hover {
+  background-color: #021a36;
+}
+
+.section-label {
+  color: #012A58;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+
+.month-section {
+  margin-bottom: 32px;
+}
+
+.stats-grid {
+  display: flex;
+  gap: 24px;
+}
+
+.current-requests-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.requests-list {
+  display: flex;
+  flex-direction: column;
+}

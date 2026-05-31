@@ -1,7 +1,7 @@
 from typing import List
 from datetime import datetime
 from ..repositories.booking_repo import BookingRepository
-from ..domain.booking import Booking
+from ..models.booking import Booking
 
 
 class BookingService:
