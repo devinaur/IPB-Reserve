@@ -1,6 +1,6 @@
 from typing import Optional
 from ..repositories.queue_repo import QueueRepository
-from ..domain.queue import QueueItem
+from ..models.queue import QueueItem
 
 
 class QueueService:

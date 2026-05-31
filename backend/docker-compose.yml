@@ -1,0 +1,16 @@
+services:
+  backend:
+    build:
+      context: ..
+      dockerfile: backend/Dockerfile
+    image: ipb-reserve-backend:latest
+    container_name: ipb-reserve-backend
+    ports:
+      - "${PORT:-8000}:${PORT:-8000}"
+    environment:
+      # Automatically configure these variables from host environment
+      - DATABASE_URL
+      - FIREBASE_CREDENTIALS
+      - INITIAL_ADMIN_EMAILS
+      - PORT
+    restart: unless-stopped

@@ -1,0 +1,152 @@
+
+.detail-top-section {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.detail-image-container {
+  flex: 1;
+}
+
+.detail-hero-image {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 16px;
+}
+
+.detail-image-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-tags {
+  display: flex;
+  gap: 8px;
+}
+
+.detail-tag {
+  background-color: #DBEAFE;
+  color: #1D4ED8;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.detail-status {
+  color: #10B981;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.detail-status.status-red {
+  color: #EF4444;
+}
+
+.detail-info-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #F3F4F6;
+}
+
+.detail-title {
+  color: #012A58;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.btn-ajukan-detail {
+  background-color: #012A58;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.btn-ajukan-detail.btn-booked-detail {
+  background-color: #FEE2E2;
+  color: #DC2626;
+  border: 1px solid #FECACA;
+  cursor: not-allowed;
+}
+
+.btn-ajukan-detail:hover:not(:disabled) {
+  background-color: #021a36;
+}
+
+.detail-description {
+  color: #4B5563;
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Other Facilities Section */
+.other-facilities-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-header h2 {
+  color: #012A58;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.link-see-all {
+  color: #012A58;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.other-facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  margin-top: 8px;
+}
+
+/* Ensure no horizontal overflow */
+.facility-detail-wrapper {
+  padding: 32px 40px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}

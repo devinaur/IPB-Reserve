@@ -1,0 +1,264 @@
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #F9FAFE;
+}
+
+.dashboard-content-wrapper {
+  padding: 32px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.dashboard-title {
+  color: #012A58;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.dashboard-header-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.btn-ajukan {
+  background-color: #012A58;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-ajukan:hover {
+  background-color: #021a36;
+}
+
+.btn-icon {
+  margin-right: 8px;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #E5E7EB;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-id {
+  color: #012A58;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.dashboard-cards-container {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.dashboard-content-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  flex: 1;
+}
+
+.activities-section, .timeline-section {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.section-header h2 {
+  font-size: 16px;
+  color: #012A58;
+  font-weight: 600;
+}
+
+.see-all {
+  font-size: 12px;
+  color: #012A58;
+  font-weight: 500;
+}
+
+.activities-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.activity-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.activity-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.activity-icon.success {
+  background-color: #DCFCE7;
+  color: #16A34A;
+}
+
+.activity-icon.warning {
+  background-color: #FEF9C3;
+  color: #CA8A04;
+}
+
+.activity-icon.error {
+  background-color: #FEE2E2;
+  color: #DC2626;
+}
+
+.activity-icon.info {
+  background-color: #DBEAFE;
+  color: #2563EB;
+}
+
+.activity-details {
+  flex: 1;
+}
+
+.activity-title {
+  font-size: 14px;
+  color: #111827;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.activity-desc {
+  font-size: 12px;
+  color: #6B7280;
+}
+
+.activity-time {
+  font-size: 12px;
+  color: #9CA3AF;
+  white-space: nowrap;
+}
+
+/* Timeline */
+.timeline-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 16px;
+}
+
+.timeline-date-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #F3F4F6;
+  color: #9CA3AF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.timeline-date-circle.active {
+  background-color: #012A58;
+  color: #FFFFFF;
+}
+
+.timeline-content {
+  background-color: #F9FAFB;
+  border: 1px solid #F3F4F6;
+  border-radius: 8px;
+  padding: 16px;
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.timeline-line {
+  width: 2px;
+  height: 24px;
+  background-color: #F3F4F6;
+  margin-left: 15px;
+  margin-top: -4px;
+  margin-bottom: -4px;
+  z-index: 1;
+}
+
+.timeline-date-text {
+  font-size: 12px;
+  color: #6B7280;
+  margin-bottom: 8px;
+}
+
+.timeline-title {
+  font-size: 14px;
+  color: #111827;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.timeline-location {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #FFFFFF;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #4B5563;
+  border: 1px solid #E5E7EB;
+}
+
+.location-icon {
+  font-size: 14px;
+}

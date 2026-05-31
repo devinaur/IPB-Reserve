@@ -2,7 +2,7 @@ from sqlmodel import Session, select
 from typing import List, Optional
 from datetime import datetime
 from ..models.queue_orm import QueueORM
-from ..domain.queue import QueueItem
+from ..models.queue import QueueItem
 
 
 class QueueRepository:

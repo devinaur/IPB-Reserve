@@ -1,0 +1,188 @@
+.facility-card {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.facility-image-container {
+  position: relative;
+  height: 200px;
+  width: 100%;
+}
+
+.facility-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.facility-status {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #FFFFFF;
+  letter-spacing: 0.5px;
+}
+
+.status-available {
+  background-color: #10B981;
+}
+
+.status-booked-today {
+  background-color: #F97316;
+}
+
+.status-booked {
+  background-color: #EF4444;
+}
+
+.status-maintenance {
+  background-color: #6B7280;
+}
+
+.facility-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.facility-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.facility-badge {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge-campus {
+  background-color: #E0F2FE;
+  color: #0369A1;
+}
+
+.badge-category {
+  background-color: #FEF3C7;
+  color: #92400E;
+}
+
+.facility-location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #6B7280;
+  font-size: 11px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.location-pin {
+  color: #9CA3AF;
+}
+
+.facility-title {
+  color: #111827;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.facility-info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.facility-capacity {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #6B7280;
+  font-size: 11px;
+  font-weight: 500;
+  flex: 1;
+}
+
+.capacity-icon {
+  color: #9CA3AF;
+  flex-shrink: 0;
+}
+
+.btn-info {
+  background-color: #FFFFFF;
+  color: #012A58;
+  border: 1.5px solid #012A58;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.btn-info:hover {
+  background-color: #F9FAFE;
+}
+
+.btn-info-icon {
+  width: 12px;
+  height: 12px;
+}
+
+/* Small variant for "Other Facilities" section */
+.variant-small {
+  min-width: 280px;
+}
+
+.variant-small .facility-image-container {
+  height: 160px;
+}
+
+.variant-small .facility-title {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.variant-small .facility-content {
+  padding: 16px;
+}
+
+.btn-delete {
+  background-color: #FFFFFF;
+  color: #DC2626;
+  border: 1.5px solid #DC2626;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.btn-delete:hover {
+  background-color: #FEF2F2;
+}
+

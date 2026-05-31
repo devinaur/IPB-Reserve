@@ -1,0 +1,77 @@
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #6B7280;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 14px;
+  color: #9CA3AF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-field {
+  width: 100%;
+  height: 44px;
+  border: 1px solid #D1D5DB;
+  border-radius: 6px;
+  padding: 0 16px;
+  font-size: 14px;
+  color: #374151;
+  background-color: #F9FAFB;
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: inherit;
+}
+
+.input-field.with-icon {
+  padding-left: 42px;
+}
+
+.input-field::placeholder {
+  color: #9CA3AF;
+}
+
+.input-field:focus {
+  border-color: #012A58;
+  background-color: #FFFFFF;
+}
+
+.input-field.with-eye-icon {
+  padding-right: 42px;
+}
+
+.password-toggle-btn {
+  position: absolute;
+  right: 14px;
+  background: none;
+  border: none;
+  color: #9CA3AF;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  outline: none;
+}
+
+.password-toggle-btn:hover {
+  color: #4B5563;
+}

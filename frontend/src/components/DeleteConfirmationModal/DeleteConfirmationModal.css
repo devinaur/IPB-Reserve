@@ -1,0 +1,61 @@
+.delete-modal {
+  max-width: 450px;
+  padding: 24px;
+}
+
+.delete-icon-container {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0;
+}
+
+.delete-warning-icon {
+  animation: pulse 2s infinite;
+}
+
+.delete-warning {
+  color: #111827;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.delete-subtext {
+  color: #6B7280;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.btn-confirm-delete {
+  background-color: #DC2626;
+  border: none;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-confirm-delete:hover {
+  background-color: #B91C1C;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

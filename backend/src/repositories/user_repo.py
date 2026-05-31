@@ -3,7 +3,7 @@ from typing import Optional
 from sqlmodel import Session, select
 
 from ..models.user_orm import UserORM
-from ..domain.user import User, UserRole
+from ..models.user import User, UserRole
 
 
 class UserRepository:
