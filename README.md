@@ -1,4 +1,4 @@
-# IPB Reserve - Clean Architecture
+# IPB Reserve
 
 Sistem Reservasi Fasilitas Kampus IPB. Project ini dibagi menjadi dua bagian utama: Frontend (React) and Backend (FastAPI).
 
